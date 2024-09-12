@@ -29,6 +29,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # 实例化模型
 model = SimpleCNN().to(device)
 
+###百度一下
 
 # 如果有多个GPU，使用DataParallel来并行化模型
 if torch.cuda.device_count() > 1:
